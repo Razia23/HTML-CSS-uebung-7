@@ -1,0 +1,938 @@
+/************/
+/*******den body habe ich höcher 100vh gemacht,um komplet den hocher
+für sich haben.
+********/
+body {
+    padding: 0px;
+    margin: 0px;
+    height: 100vh;
+}
+
+/**** den header hat display flex mit
+schriftsart weiß gemacht,*****/
+/***space around hat den seiten abstand funktion.***/
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.868);
+    color: white;
+    padding: 0px;
+    margin: 0px;
+}
+
+/***** hier liegt den logo****/
+/****Mit dem filter habe ich den farbe geändert.*****/
+header img {
+    max-width: 85px;
+    max-height: 18px;
+    margin: 20px;
+    filter: brightness(8);
+}
+
+/***** boxes habe display flex,um neben eiander zu posotioniert.****/
+header div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+/**** hier habe ich den liena von unter mein a-texte mit
+der hilfe text-decotation:none weg gemacht.*****/
+/*** font große klein gemacht.***/
+header div a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.781);
+    font-size: small;
+}
+
+/**** meine a texte haben hover mit unter ein liena
+mit hilft border-bottom gemacht.*****/
+
+header div a:hover {
+    color: white;
+    border-bottom: 3px rgba(255, 255, 255, 0.781) solid;
+}
+
+/**** keine inner und außere abstand mit (0px)*****/
+main {
+    padding: 0px;
+    margin: 0px;
+}
+
+/*** den schrift farbe von allen divs******/
+
+main div {
+    color: rgba(86, 83, 83, 0.737);
+}
+
+/****hintergrund bild*****/
+/**** andere schriftsart*****/
+main .div-1 {
+    background-image: url("bg-2.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    color: white;
+    text-align: start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/**** und auch andere hintergrund farbe , um den hintergrund
+bild etwas domkler zu machen*****/
+/**** display flex, um die texte gut organeizieren.*****/
+main .div-1 .hintergrund-farbe {
+    background-color: rgba(0, 0, 0, 0.653);
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 400px;
+}
+
+/*****hier ist mein texte große großer als ander...****/
+main .div-1 .p2 {
+    font-size: xx-large;
+    margin-top: 50px;
+}
+
+/****hier mein texte haben ander farbe.*****/
+main .div-1 .p2 span {
+    color: rgba(69, 54, 42, 0.856);
+}
+
+/****den button mit andere farbe und display flex*****/
+/*********/
+main .div-1 button {
+    background-color: rgba(23, 23, 23, 0.904);
+    color: white;
+    border: none;
+    width: 160px;
+    height: 40px;
+    margin: 10px;
+    padding-right: 4px;
+    padding-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/****den klein download's icon habe ich
+mit der hilfe filter von schwarz weiß gemacht.*****/
+main .div-1 button img {
+    filter: invert(95%);
+    margin: 2px;
+    padding-left: 10px;
+    justify-content: space-around;
+}
+
+/*****feste groß für den bild****/
+main .div-1 img {
+    width: 10px;
+    height: 10px;
+}
+
+/****farbe und hight fest gemacht und texte ist auch  zenter position.*****/
+main .text {
+    text-align: center;
+    align-items: center;
+    height: 200px;
+    color: rgba(45, 45, 45, 0.644);
+}
+
+/**** allen h2 im text div habe außer abstand von oben 10%.*****/
+main .text h2 {
+    margin-top: 10%;
+}
+
+/*****außer abstand von außen 2%****/
+main .text p {
+    margin-bottom: 2%;
+    align-items: center;
+}
+
+/**** display grid mit 2 verschiedenen große(40 und 60)%*****/
+main .halb {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    background-color: rgb(241, 237, 237);
+    color: rgba(45, 45, 45, 0.644);
+}
+
+/****display flex und overflow:hidden,um den text trenn im box,
+zu haben*****/
+main .halb div {
+    max-height: 370px;
+    padding-left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    overflow: hidden;
+}
+
+/****den Bild nicht mehr als 370 hoch sein*****/
+main .halb img {
+    max-height: 370px;
+    width: 100%;
+}
+
+/****innere abstand von linke und oben gemahct.*****/
+main .halb h3 {
+    padding-left: 30%;
+    padding-top: 5%;
+}
+
+/**** den p-texte haben von außen link 30% abstand.*****/
+main .halb p {
+    margin-left: 30%;
+}
+
+/**** den button im richte halb seite*****/
+main .halb button {
+    margin-left: 30%;
+    margin-bottom: 5%;
+}
+
+/*****den div display grid mit 3 gleiche spalten.****/
+main .research {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    align-items: start;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    padding-left: 10%;
+    color: rgba(45, 45, 45, 0.644);
+}
+
+/*****außer abstand 20px.****/
+main .research div {
+    margin: 20px;
+}
+
+/****hintergrund bild.*****/
+main .skill {
+    background-image: url(foto-9.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+}
+
+/****ein hintergrund bild *****/
+/*****display flex wrap , um die elemente neben einander zu haben.****/
+main .skill .color .img {
+    background-image: url(skill-shape.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 95px;
+    height: 95px;
+    margin: 10px;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/**** noch ein hintergrund farbe.*****/
+/****auch mit display flex center positioniert.*****/
+main .skill .color {
+    background-color: rgba(0, 0, 0, 0.532);
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    color: rgba(255, 255, 255, 0.792);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+/****texte sind weiß mit klein Schriftsart.*****/
+main .skill .color div p {
+    color: white;
+    line-height: 2px;
+    font-size: small;
+}
+
+/****den div zenteriert mit inneroben  abstand 70px.*****/
+main .skill .color .p-skill {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 70px;
+    width: 100%;
+}
+
+/****display grig mit 4gleiche splaten.*****/
+main .paperclips {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+
+/*****den große von divs.****/
+/**** und feste breite und hocher für divs.******/
+main .paperclips div {
+    width: 100%;
+    height: 100%;
+}
+
+/****hintergrund bild.*****/
+/**den 1 bild mit feste große null abstand von seiten***/
+/**** und feste breite und hocher******/
+main .paperclips .img-1 {
+    background-image: url(foto-2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+/****hintergrund bild.*****/
+/**** und feste breite und hocher******/
+/***den 2 bild mit feste große null abstand von seiten*******/
+main .paperclips .img-2 {
+    background-image: url(foto-3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+/****hintergrund bild.*****/
+/****den 3 bild mit feste große null abstand von seiten******/
+/**** und feste breite und hocher******/
+main .paperclips .img-3 {
+    background-image: url(foto-4.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+/****hintergrund bild.*****/
+/*****den 4 bild mit feste große null abstand von seiten****/
+/**** und feste breite und hocher******/
+main .paperclips .img-4 {
+    background-image: url(foto-5.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+/****display flex*****/
+main .paperclips .img-1 .verrichtekt2 .aussen,
+main .paperclips .img-2 .verrichtekt2 .aussen,
+main .paperclips .img-3 .verrichtekt2 .aussen,
+main .paperclips .img-4 .verrichtekt2 .aussen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/***** außer und innere abstand sind 0px,aber 
+den breit ist 92%.****/
+
+main .paperclips .img-1 .verrichtekt2,
+main .paperclips .img-2 .verrichtekt2,
+main .paperclips .img-3 .verrichtekt2,
+main .paperclips .img-4 .verrichtekt2 {
+    margin: 0px;
+    padding: 0px;
+    width: 92%;
+}
+
+/***** den aussen divs haben display flex,****/
+main .paperclips .img-1 .verrichtekt2 .aussen,
+main .paperclips .img-2 .verrichtekt2 .aussen,
+main .paperclips .img-3 .verrichtekt2 .aussen,
+main .paperclips .img-4 .verrichtekt2 .aussen {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    margin: 10px;
+    color: white;
+}
+
+/***** und hier display none ,weil später mit hover
+mache ich display block fuktion,um die divs wieder aktieviert.****/
+/***********************************************/
+/***********************************************/
+/********achtung!********/
+/***********************************************/
+/*********es funktioniert gleich zeit nur*******/
+/*******ein display funtion in einem div.*******/
+/***********************************************/
+main .paperclips .img-1 .verrichtekt2 .aussen .innen,
+main .paperclips .img-2 .verrichtekt2 .aussen .innen,
+main .paperclips .img-3 .verrichtekt2 .aussen .innen,
+main .paperclips .img-4 .verrichtekt2 .aussen .innen {
+    display: none;
+    margin: 0px;
+    padding: 0px;
+    height: auto;
+}
+
+/********achtung!********/
+/******* im den verrichtekt2:Hover den div aussen
+habe ich hier hintergrund farbe gemacht. *******/
+main .paperclips .img-1 .verrichtekt2:hover .aussen,
+main .paperclips .img-2 .verrichtekt2:hover .aussen,
+main .paperclips .img-3 .verrichtekt2:hover .aussen,
+main .paperclips .img-4 .verrichtekt2:hover .aussen {
+    background-color: rgba(0, 0, 0, 0.902);
+    background-size: cover;
+}
+
+/****den hr habe ich hier von link und recht 40%***
+***abstand gemacht.****/
+main .paperclips hr {
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+/**** und hier habe ich mein display block gemacht,die 
+ich ohne hover display none gegeben habe*****/
+main .paperclips .img-1 .verrichtekt2:hover .aussen .innen,
+main .paperclips .img-2 .verrichtekt2:hover .aussen .innen,
+main .paperclips .img-3 .verrichtekt2:hover .aussen .innen,
+main .paperclips .img-4 .verrichtekt2:hover .aussen .innen {
+    display: block;
+    color: white;
+}
+
+/*****hintergrund farbe schwarz mit schrift
+ farbe:rgba(255, 255, 255, 0.795); und von den innen uben 33px
+ abstand.****/
+main .hintergrund-farbe2 {
+    background-color: black;
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    height: 200px;
+    color: rgba(255, 255, 255, 0.795);
+    padding-top: 33px;
+}
+
+/****in diesem div habe ich noch ein div mit button rein gepackt
+,um den button div centeriert*****/
+main .see {
+    width: 100%;
+    text-align: center;
+    margin: 30px;
+    color: rgba(45, 45, 45, 0.644);
+}
+
+/*****ein button mit feste große****/
+main .see div button {
+    width: 140px;
+    height: 35px;
+    margin: 10px;
+    border: 2px black solid;
+    border-radius: 5px;
+    background-color: white;
+}
+
+/*****hier liegt den kleine icon neben den text.****/
+main .see div button img {
+    width: 15px;
+    height: 15px;
+}
+
+/**** die gesamte haupt div habe ich feste
+breit und große gemacht*****/
+main .hintergrund-gray {
+    width: 100%;
+    height: 450px;
+    text-align: center;
+    padding-top: 20px;
+    background-color: rgb(241, 237, 237);
+    background-size: cover;
+    color: rgba(45, 45, 45, 0.644);
+    text-align: center;
+    padding: 10px;
+}
+
+/**** diese div hat display flex, flex-wrap, um die 
+****elemente neben einander zu haben*****/
+main .hintergrund-gray .foto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(241, 237, 237);
+    color: rgb(78, 76, 76);
+}
+
+/**** den divs habe ich hier feste breite und hocher gegeben.*****/
+main .hintergrund-gray .foto div {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+/****hier liegt mein bild *****/
+main .hintergrund-gray .foto .img {
+    background-image: url(foto-7.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 10px;
+    margin: 10px;
+}
+
+/*****die sind display none, um sich im normala seite zum verstecken***
+****und dan mit hover display block kann man die sehen.****/
+/**********************************************************/
+/******mit filter hilfe habe ich den farbe geändert.*******/
+/*********************************************************/
+/****hier spreche ich über kleine icons im
+*****meine hover funktion trenn sind mit den margin 5px.*****/
+main .hintergrund-gray .foto .img .verrichtekt img {
+    display: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    align-items: center;
+    filter: invert(1);
+    margin: 5px;
+    padding: 0px;
+
+}
+
+/**** den kleine icons habe ich hier centeriert.*****/
+/*****und mit margin 0px habe ich den schwarze hover mit
+meiner bilder fixert.******/
+main .hintergrund-gray .foto .img .verrichtekt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0px;
+}
+
+/******* im den div verrichtekt:hover
+habe ich hier hintergrund farbe gemacht. *******/
+main .hintergrund-gray .foto .img .verrichtekt:hover {
+    background-color: rgba(0, 0, 0, 0.902);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 200px;
+}
+
+/****** hier habe ich den versteckt div display block
+gegeben um wieder bei hover zu sehbar sein.***/
+main .hintergrund-gray .foto .img .verrichtekt:hover img {
+    display: block;
+}
+
+/****hier habe den button feste breit und hocher gemacht.*****/
+main .hintergrund-gray .foto button {
+    width: 200px;
+    height: 80px;
+}
+
+/*****unter die texte habe ich noch ein div,
+um unteren teil von diese div ein border zu haben
+****/
+main .text .line,
+main .hintergrund-gray .line,
+main .blog .line {
+    border-bottom: 4px solid rgba(45, 45, 45, 0.644);
+    margin-right: 48%;
+    margin-left: 48%;
+}
+
+/****die schrift groß habe ich hier klein gemacht.*****/
+main .hintergrund-gray .foto button {
+    text-align: center;
+    font-size: small;
+}
+
+/****hintergrund farbe schwarz, mit border*****/
+main .hintergrund-gray .foto button:hover {
+    border: 2px black solid;
+    border-radius: 2px;
+    width: 200px;
+    height: 80px;
+}
+
+/****hintergrund farbe schwarz,*****/
+main .client {
+    background-color: black;
+    width: 100%;
+    height: 230px;
+    text-align: center;
+    padding: 25px;
+    align-items: center;
+}
+
+/****nur den schrift farbe*****/
+main .client h3 {
+    color: white;
+}
+
+/***** nur die schtift farbe****/
+main .client p,
+main .client h5 {
+    color: rgb(139, 127, 127);
+}
+
+/****von oben und links habe ich außen abstand fest gemacht.*****/
+main .punkt {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+/*****feste breit und hocher****/
+main .client img {
+    width: 10px;
+    height: 10px;
+}
+
+/***** um die lienia weg zu machen,habe ich
+text deko none benutzt.****/
+main .client a {
+    text-decoration: none;
+    color: rgba(5, 215, 215, 0.84);
+}
+
+/**** feste hocher und breit*****/
+main .blog {
+    width: 100%;
+    text-align: center;
+    color: rgba(94, 90, 90, 0.84);
+    height: 200px;
+    padding-top: 70px;
+}
+
+/*****andere text farbe****/
+main .blog h3 {
+    color: rgba(40, 11, 11, 0.74);
+}
+
+/****display grid mit 3spalten aber ein zwichten ist 2% klein*****/
+/***** grid-template-columns: 49% 2% 49%; *****/
+/******während die liene oder border habe ich ein spalte
+******* 2% gemacht*****/
+main .camera {
+    display: grid;
+    grid-template-columns: 49% 2% 49%;
+    margin-bottom: 120px;
+}
+/*** abstan von aussen 10px.****/
+main .camera div {
+    margin: 10px;
+}
+
+/****figt ab dem reihe 1 und spalte 1 an.*****/
+main .camera .grid-feld-1 {
+    grid-row-start: 1;
+    grid-column-start: 1;
+}
+
+/****figt ab dem reihe 1 und spalte 2 an.*****/
+main .camera .grid-feld-2 {
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+
+/****figt ab dem reihe 1 und spalte 3 an.*****/
+main .camera .grid-feld-3 {
+    grid-row-start: 1;
+    grid-column-start: 3;
+}
+
+/****figt ab dem reihe 2 und spalte 1 an.*****/
+main .camera .grid-feld-4 {
+    grid-row-start: 2;
+    grid-column-start: 1;
+}
+
+/****figt ab dem reihe 2 und spalte 2 an.*****/
+main .camera .grid-feld-5 {
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+/****figt ab dem reihe 2 und spalte 3 an.*****/
+main .camera .grid-feld-6 {
+    grid-row-start: 2;
+    grid-column-start: 3;
+}
+
+/****fingt ab dem reihe 3 und spalte 1 an.*****/
+main .camera .grid-feld-7 {
+    grid-row-start: 3;
+    grid-column-start: 1;
+}
+
+/****fingt ab dem 3reihe und 2 spalte an.*****/
+main .camera .grid-feld-8 {
+    grid-row-start: 3;
+    grid-column-start: 2;
+}
+
+/***** dies div fingt ab dem 3 reihe und 3spalte an.****/
+main .camera .grid-feld-9 {
+    grid-row-start: 3;
+    grid-column-start: 3;
+}
+
+/*****liegt ein bild die ich klein gemacht,
+wie eine cirkel****/
+main .camera .grid-feld-2 img,
+main .camera .grid-feld-5 img,
+main .camera .grid-feld-8 img {
+    position: absolute;
+    margin-left: -4px;
+    width: 16px;
+    height: 16px;
+}
+
+/**** fest hocher und breit*****/
+/***und von linke seite hat ein border von 1px .**/
+main .camera .grid-feld-2 div,
+main .camera .grid-feld-5 div,
+main .camera .grid-feld-8 div {
+    height: 250px;
+    margin: 50%;
+    border-left: 1px solid rgb(52, 51, 51);
+}
+
+/**** display flex,und es hat als grid funktion
+3 spalten für sich.*****/
+main .camera .trick-138 {
+    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/**** den bild hat feste breit aber
+hocher ist otomatich*****/
+main .camera img {
+    width: 100%;
+    height: auto;
+}
+
+/*****den h3 hat andere farbe****/
+main .camera div h3 {
+    color: rgba(40, 11, 11, 0.74);
+    text-align: start;
+}
+
+/**** den h6 hat andere farbe*****/
+main .camera div h6 {
+    color: rgba(40, 11, 11, 0.74);
+    text-align: start;
+}
+
+/***** abstand von seiten 0px****/
+main .camera .post {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+
+/*****und hier ein hintergrund bild und noch display flex.****/
+main .camera .post .outer {
+    margin: 0px;
+    padding: 0px;
+    background-image: url(btn-round.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*****hier liegt ein text mit.****/
+main .camera .post .inner {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-size: small;
+}
+
+/**** display flex und center positioniert.*****/
+main .hintergrund-gray2 {
+    background-color: rgb(241, 237, 237);
+    width: 100%;
+    height: 380px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/*****h2 hat innere abstand 30px****/
+main .hintergrund-gray2 h2 {
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+}
+
+/**** den p texte haben andere farbe
+mit schrift art klein.*****/
+
+main .hintergrund-gray2 .hintergrund-gray3 div p {
+    border-top: 4px black groove;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: small;
+}
+
+/****den div hintergrund-gray3 hat funktion display grid 
+mit 2 gleiche spalten *****/
+
+main .hintergrund-gray2 .hintergrund-gray3 {
+    width: 55%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    font-weight: bold;
+}
+
+/**** nur abstand zwitchen divs 10px.*****/
+main .hintergrund-gray2 div {
+    margin: 10px;
+
+}
+
+/****dies div hat 2 spalten für sich*****/
+main .hintergrund-gray2 .message {
+    grid-column-end: span 2;
+}
+
+/**** den button habe ich in einen div mit der name 
+button gepackt, um nur die button zum zenteriert.*****/
+main .hintergrund-gray2 .hintergrund-gray3 .button {
+    grid-column-end: span 2;
+    text-align: center;
+    border-top: none;
+    padding-bottom: 10px;
+}
+
+/**** ein buttoon*****/
+main .hintergrund-gray2 .hintergrund-gray3 button {
+    width: 120px;
+    height: 30px;
+    border: 2px solid black;
+    align-items: center;
+    margin-top: 10px;
+    color: rgb(62, 61, 61);
+}
+
+/****den div hat schwartze farbe als hintergrund
+und display grid mit 4 spalten.*****/
+main .logo2 {
+    background-color: rgba(0, 0, 0, 0.906);
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    width: 100%;
+    height: 300px;
+    text-align: start;
+    margin: 0px;
+    padding: 10px;
+}
+
+/*****die schrifte hat andere farbe.****/
+main .logo2 div {
+    margin: 10px;
+    color: rgba(194, 192, 192, 0.642);
+}
+
+/****  die große meine 2 logo am letzt div in meiner body.
+*****/
+main .logo2 .img {
+    width: 100px;
+    height: 30px;
+    color: none;
+}
+
+/****hier liegt die klein icons *****/
+/****mit filter option habe ich den farbe geändert.****/
+main .logo2 img {
+    width: 15px;
+    height: 15px;
+    filter: invert(0.7);
+}
+
+/*****hier h4 hat andere farbe.****/
+main .logo2 h4 {
+    color: rgba(194, 192, 192, 0.642);
+}
+
+/***** in diesem span liegt die datum,
+und die will ich im klein schriftsarte haben,
+deswegen habe ich font size klein gemacht.****/
+main .logo2 span {
+    color: rgba(98, 97, 97, 0.678);
+    font-size: small;
+}
+
+/**** ab hier fingt die footer*****/
+/***** mit display funkion an.****/
+
+body footer {
+    padding: 0px;
+    margin: 0px;
+    height: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: rgba(141, 137, 137, 0.594);
+}
+
+/***** hier habe ich p texte margin gegeben und noch
+die große von texte habe ich klein gemacht.****/
+body footer p {
+    margin: 4px;
+    font-size: small;
+}
